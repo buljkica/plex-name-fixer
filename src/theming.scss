@@ -1,0 +1,24 @@
+@import '~@angular/material/theming';
+//@import "~material-design-icons/iconfont/material-icons.css";
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+
+@include mat-core();
+
+// A primary palette: colors most widely used across all screens and components.
+$primary: mat-palette($mat-light-blue, A400, A100, A700);
+
+// An accent palette: colors used for the floating action button and interactive elements.
+$accent: mat-palette($mat-light-green, A200, A100, A400);
+
+// A warn palette: colors used to convey error state.
+$warn: mat-palette($mat-red);
+
+// TODO: A foreground palette: colors for text and icons.
+// TODO: A background palette: colors used for element backgrounds.
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+$background-palette: map-get($theme, background);
+$card-background-color: mat-color($background-palette, background);
+
+@include angular-material-theme($theme);

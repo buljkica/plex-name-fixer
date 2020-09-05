@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+
+// A primary palette: colors most widely used across all screens and components.
+$app-primary: mat-palette($mat-light-blue, A400, A100, A700);
+
+// An accent palette: colors used for the floating action button and interactive elements.
+$app-accent: mat-palette($mat-light-green, A200, A100, A400);
+
+// A warn palette: colors used to convey error state.
+$app-warn: mat-palette($mat-red, A100);
+
+// Create color vars
+$primary: mat-color($app-primary, A400);
+$primary-lighter: mat-color($app-primary, A100);
+$primary-darker: mat-color($app-primary, A700);
+
+$accent: mat-color($app-accent, A200);
+$accent-lighter: mat-color($app-accent, A100);
+$accent-darker: mat-color($app-accent, A400);
+
+$warn: mat-color($app-warn);
